@@ -62,7 +62,7 @@ Features were only selected from the original data set if they had a `mean()` or
 - The data in training and test were merged in `data`
 - The column names of the features in `data` were set from `features`
 - Acronyms in variable names in `data` for 't' and 'f' are replaced with descriptive labels of 'Time' and 'Freq
-- Features with `Mag` had the Mag term moved to the back of the feature name to make the naming convintion standard, Last part of the name is the **component*
+- Features with `Mag` had the Mag term moved to the back of the feature name to make the naming convintion standard. The last part of the name is the **component**
 - Features with `BodyBody` were corrected to just `Body` for consistancy 
 - `data`, `activity` and `subject` were merged to form `new.data`
 - `activity.lables` were substituded for `activity.ID` in `new.data`
