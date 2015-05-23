@@ -2,6 +2,7 @@
 library("tidyr")
 library("dplyr")
 
+
 ### ---- read and build a tidy data set for each user and activity for all mean/std features ----
 ##
 # This is an R script called run_analysis.R that does the following. 
@@ -87,3 +88,4 @@ data.means.long <- data.means %>%
                    rename(magnitude=Mag)
 
 write.csv(data.means.long, file = "tidy_data_long.csv", row.names=FALSE)
+
