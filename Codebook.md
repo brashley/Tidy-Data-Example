@@ -73,3 +73,8 @@ Features were only selected from the original data set if they had a `mean()` or
 ##Output Data Set
 
 The output data `tidy_data.csv` is a a comma-delimited value file. The header line contains the names of the variables. It contains the mean of the mean and standard deviation values for each subject and activity combination.  
+
+The variables in the data file are:
+```{r }
+as.data.frame(names(data.means))
+```
