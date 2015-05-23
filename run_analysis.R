@@ -75,8 +75,9 @@ new.data <- group_by(new.data, subject, activity)
 # summaize the data by subject and activity and calc the mean for each feature
 data.means <- new.data %>% summarise_each(funs(mean)) 
 
-# save data as tidy data set
+# save data as tidy data set csv and as txt 
 write.csv(data.means, file = "tidy_data.csv", row.names=FALSE)
+write.table(data.means,file = "tidy_data.txt" , row.name=FALSE)
 
 # convert to long view - each domain/feature/stat has a vector of XYZ and magnitude
 data.means.long <- data.means %>% 
