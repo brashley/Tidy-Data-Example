@@ -77,7 +77,7 @@ test <- new.data %>% gather(feature,measure,-c(subject,activity)) %>% separate(f
 data.means <- new.data %>% summarise_each(funs(mean)) 
 
 # save data as tidy data set
-write.table(data.means, file = "tidy_data.txt", row.names=TRUE)
+write.table(data.means, file = "tidy_data.txt", row.names=FALSE)
 
 # convert to long view - each domain/feature/stat has a vector of XYZ and magnitude
 data.means.long <- data.means %>% 
@@ -86,4 +86,4 @@ data.means.long <- data.means %>%
                    spread(vect,measure) %>%
                    rename(magnitude=Mag)
 
-write.table(data.means.long, file = "tidy_data_long.txt", row.names=TRUE)
+write.csv(data.means.long, file = "tidy_data_long.csv", row.names=FALSE)
