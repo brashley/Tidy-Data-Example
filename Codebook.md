@@ -68,7 +68,7 @@ Features were only selected from the original data set if they had a `mean()` or
 - `activity.lables` were substituded for `activity.ID` in `new.data`
 - Features without "Mean" or "Std" were removed, includeing the "meanFreq" columns
 - `new.data` was grouped by acctivity and subject and then the `mean` was calculated for each feature and stored in `data.means`
-- Finally, the data in `new.data` was written as a csv file into `tidy_data.csv`
+- Finally, the data in `data.means` was written as a csv file into `tidy_data.csv`
 
 ##Output Data Set
 
