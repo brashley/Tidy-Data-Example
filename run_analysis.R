@@ -72,8 +72,6 @@ new.data <- inner_join(activities, activity.lables, by="act.num") %>%
 # select subject/activity for group by
 new.data <- group_by(new.data, subject, activity)
 
-test <- new.data %>% gather(feature,measure,-c(subject,activity)) %>% separate(feature,c("domain","feature","statistic","vect"))
-
 # summaize the data by subject and activity and calc the mean for each feature
 data.means <- new.data %>% summarise_each(funs(mean)) 
 

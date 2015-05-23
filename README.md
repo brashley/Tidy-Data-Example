@@ -1,6 +1,6 @@
 ---
 title: "README"
-author: "Richard Ashley"
+author: "Richard A."
 date: "Saturday, May 23, 2015"
 output: html_document
 ---
@@ -13,7 +13,7 @@ The purpose of this project is to demonstrate our ability to collect, work with,
 1. a tidy data set as described below, 
 2. a link to a Github repository with your script for performing the analysis 
 3. a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. 
-4. a README.md (this file) in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.  
+4. a README.md (this file) that is in this repo with my script. 
 
 ## The Source Data
 One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data used for this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
@@ -34,13 +34,13 @@ I created one R script called `run_analysis.R` that does the following.
 5. Appropriately labels the data set with descriptive variable names. 
 6. From the data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Only full features with *Mean* and *Std* were used. Vectors obtained by averaging the signals in a signal window sample were ignored from this summarized data set. It was assumed that the `Mean` of these measures would be used to show the central tendency for each subject/activity/features. Having the mean of a 'signal window sample' did not make sense. 
+Only full features with `mean()` or `std()` were used. Vectors obtained by averaging the signals in a signal window sample were ignored from this summarized data set. It was assumed that the `Mean` of these measures would be used to show the central tendency for each subject/activity/features. Having the mean of a 'signal window sample' did not make sense. 
 
 ## The Output Tidy Data Set
 
 I tidy data set was created using the above script and meating the project requirement. 
 
-A `Code Book` for this resulting *tidy* data set can be found in this repo at [link](https://github.com/brashley/Tidy-Data-Example/blob/master/Codebook.md)
+A `Code Book` for this resulting *tidy* data set can be found in this repo at [Codebook.md](https://github.com/brashley/Tidy-Data-Example/blob/master/Codebook.md)
 
 For it was assumened that the **Wide** data format was more appropriate for the subsequent analysis [that is unknown] would be prefered.  The wide data file is here [tidy_data.csv](https://github.com/brashley/Tidy-Data-Example/blob/master/tidy_data.csv)
 
