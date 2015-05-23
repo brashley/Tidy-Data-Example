@@ -74,7 +74,75 @@ Features were only selected from the original data set if they had a `mean()` or
 
 The output data `tidy_data.csv` is a a comma-delimited value file. The header line contains the names of the variables. It contains the mean of the mean and standard deviation values for each subject and activity combination.  
 
-The variables in the data file are:
-```{r }
-as.data.frame(names(data.means))
-```
+The variables in the data file are given below. Units are self eplanitary by name of measure. All measures are the `mean` across all measurements grouped by subject/activity:
+
+Variable List | Description
+------------- |--------------------------------------------
+subject | Subject ID
+activity | Activity being performned
+Time.BodyAcc.Mean.X | Mean by subject/activity for all these measures
+Time.BodyAcc.Mean.Y | Mean by subject/activity for all these measures
+Time.BodyAcc.Mean.Z | Mean by subject/activity for all these measures
+Time.BodyAcc.Std.X | Mean by subject/activity for all these measures
+Time.BodyAcc.Std.Y | Mean by subject/activity for all these measures
+Time.BodyAcc.Std.Z | Mean by subject/activity for all these measures
+Time.GravityAcc.Mean.X | Mean by subject/activity for all these measures
+Time.GravityAcc.Mean.Y | Mean by subject/activity for all these measures
+Time.GravityAcc.Mean.Z | Mean by subject/activity for all these measures
+Time.GravityAcc.Std.X | Mean by subject/activity for all these measures
+Time.GravityAcc.Std.Y | Mean by subject/activity for all these measures
+Time.GravityAcc.Std.Z | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Mean.X | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Mean.Y | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Mean.Z | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Std.X | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Std.Y | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Std.Z | Mean by subject/activity for all these measures
+Time.BodyGyro.Mean.X | Mean by subject/activity for all these measures
+Time.BodyGyro.Mean.Y | Mean by subject/activity for all these measures
+Time.BodyGyro.Mean.Z | Mean by subject/activity for all these measures
+Time.BodyGyro.Std.X | Mean by subject/activity for all these measures
+Time.BodyGyro.Std.Y | Mean by subject/activity for all these measures
+Time.BodyGyro.Std.Z | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Mean.X | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Mean.Y | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Mean.Z | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Std.X | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Std.Y | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Std.Z | Mean by subject/activity for all these measures
+Time.BodyAcc.Mean.Mag | Mean by subject/activity for all these measures
+Time.BodyAcc.Std.Mag | Mean by subject/activity for all these measures
+Time.GravityAcc.Mean.Mag | Mean by subject/activity for all these measures
+Time.GravityAcc.Std.Mag | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Mean.Mag | Mean by subject/activity for all these measures
+Time.BodyAccJerk.Std.Mag | Mean by subject/activity for all these measures
+Time.BodyGyro.Mean.Mag | Mean by subject/activity for all these measures
+Time.BodyGyro.Std.Mag | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Mean.Mag | Mean by subject/activity for all these measures
+Time.BodyGyroJerk.Std.Mag | Mean by subject/activity for all these measures
+ Freq.BodyAcc.Mean.X | Mean by subject/activity for all these measures
+Freq.BodyAcc.Mean.Y | Mean by subject/activity for all these measures
+Freq.BodyAcc.Mean.Z | Mean by subject/activity for all these measures
+Freq.BodyAcc.Std.X | Mean by subject/activity for all these measures
+Freq.BodyAcc.Std.Y | Mean by subject/activity for all these measures
+Freq.BodyAcc.Std.Z | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Mean.X | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Mean.Y | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Mean.Z | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Std.X | Mean by subject/activity for all these measures
+ Freq.BodyAccJerk.Std.Y | Mean by subject/activity for all these measures
+ Freq.BodyAccJerk.Std.Z | Mean by subject/activity for all these measures
+Freq.BodyGyro.Mean.X | Mean by subject/activity for all these measures
+ Freq.BodyGyro.Mean.Y | Mean by subject/activity for all these measures
+Freq.BodyGyro.Mean.Z | Mean by subject/activity for all these measures
+ Freq.BodyGyro.Std.X | Mean by subject/activity for all these measures
+ Freq.BodyGyro.Std.Y | Mean by subject/activity for all these measures
+ Freq.BodyGyro.Std.Z | Mean by subject/activity for all these measures
+Freq.BodyAcc.Mean.Mag | Mean by subject/activity for all these measures
+ Freq.BodyAcc.Std.Mag | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Mean.Mag | Mean by subject/activity for all these measures
+Freq.BodyAccJerk.Std.Mag | Mean by subject/activity for all these measures
+Freq.BodyGyro.Mean.Mag | Mean by subject/activity for all these measures
+Freq.BodyGyro.Std.Mag | Mean by subject/activity for all these measures
+Freq.BodyGyroJerk.Mean.Mag | Mean by subject/activity for all these measures
+Freq.BodyGyroJerk.Std.Mag | Mean by subject/activity for all these measures
